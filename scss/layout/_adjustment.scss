@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+
+a {
+  color: $white;
+  text-decoration: none;
+  font-family: 'UbuntuMedium', Arial, Helvetica, sans-serif;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+img {
+  font-size: 0;
+  line-height: 0;
+}
+
+.order-link {
+  min-width: rem(98px);
+  padding: rem(10px) rem(17px);
+  border-radius: 5px;
+  color: $white;
+  text-decoration: none;
+  font-size: rem(13px);
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  transition: .5s;
+}

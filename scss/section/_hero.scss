@@ -1,0 +1,148 @@
+.head-text {
+  font-family: Gagalin;
+  font-weight: normal;
+  font-size: 72px;
+}
+
+.p-text {
+  font-family: Lifehack;
+  font-weight: normal;
+}
+
+.background {
+  background: url(../img/texture.png), url("../img/bg1.jpg") #000 100% 100%;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  background-color: $orange-button;
+  border-radius: 6px;
+  width: 100px;
+  height: 37px;
+  font-size: 13px;
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: UbuntuMedium;
+
+  &:active,
+  &:hover {
+    background-color: $orange-button_hover;
+  }
+}
+
+.header {
+  width: 100%;
+  margin-top: 9px;
+
+  &-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 944px;
+    color: $white;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__list {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 510px;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-right: 13px;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 26px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -20px;
+      top: 12px;
+      @include circle(4px, $white);
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
+
+.first-look {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+
+  &-container {
+    max-width: 868px;
+    margin-bottom: 75px;
+    color: $white;
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
+  &__head {
+    line-height: 85px;
+    color: $yellow;
+    margin: 122px 0 0;
+  }
+
+  &__p {
+    font-size: 65px;
+    line-height: 60px;
+    margin-top: 25px;
+  }
+
+  &__img {
+    width: 451px;
+    height: 424px;
+  }
+
+  &__picture {
+    margin-top: -12px;
+    margin-left: -18px;
+  }
+}
+
+.arrow-button {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid $white;
+  border-left: 2px solid $white;
+  border-right: none;
+  border-top: none;
+  background-color: transparent;
+  border-bottom-left-radius: 6px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  margin-bottom: 50px;
+}
