@@ -1,28 +1,27 @@
 .advantages {
   text-align: center;
   background: url("../img/adv.jpg") no-repeat 100% 100% #fff;
-  width: 100%;
-  min-height: 650px;
-  height: 100vh;
   margin: 0 auto;
   background-size: cover;
   display: flex;
   align-items: center;
 
   &-container {
-    width: 920px;
+    width: rem(920px);
+    display: flex;
+    flex-direction: column;
   }
 
   &__head {
-    line-height: 72px;
+    line-height: rem(72px);
     display: inline-block;
-    margin: 0 auto 6vh;
+    margin: 0 auto;
   }
 
   &__h {
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 10px;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    margin-bottom: rem(10px);
   }
 
   &__list {
@@ -31,14 +30,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 4%;
   }
 
   &__item {
-    width: 287px;
+    width: rem(287px);
     text-align: center;
   }
 
   &__img-box {
-    height: 89px;
+    height: rem(89px);
   }
 }

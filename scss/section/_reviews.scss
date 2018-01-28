@@ -1,13 +1,10 @@
 .reviews {
-  width: 100%;
-  min-height: 650px;
-  height: 100vh;
   background-color: $dark;
 
   &__button {
     background-color: $dark;
-    width: 113px;
-    line-height: 30px;
+    width: rem(113px);
+    line-height: rem(30px);
 
     &:focus,
     &:hover {
@@ -21,12 +18,12 @@
     position: relative;
 
     &-head {
-      font-size: 14px;
-      line-height: 28px;
+      font-size: rem(14px);
+      line-height: rem(28px);
     }
 
     &-text {
-      min-width: 222px;
+      min-width: rem(222px);
     }
 
     &--dark {
@@ -60,7 +57,7 @@
     top: 8%;
     left: 8%;
     color: #fff;
-    padding-right: 15px;
+    padding-right: rem(15px);
     display: none;
   }
 
