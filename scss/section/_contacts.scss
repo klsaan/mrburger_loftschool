@@ -1,0 +1,26 @@
+.contacts {
+    color: #fff;
+    line-height: 0;
+    margin-left: rem(80px);
+
+    &__tel {
+        display: inline-block;
+        color: $orange-button;
+        font-family: 'UbuntuB', Arial, Helvetica, sans-serif;
+        font-size: bold;
+        position: relative;
+        margin-top: rem(8px);
+        margin-left: rem(20px);
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: rem(13px);
+            height: rem(13px);
+            background: url(../img/phone.svg) no-repeat;
+            background-size: cover;
+            top: -7px;
+            left: -20px;
+        }
+    }
+}

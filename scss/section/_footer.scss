@@ -1,0 +1,11 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../img/footer.png) no-repeat $dark;
+    background-size: cover;
+    width: 100%;
+    height: rem(60px);
+    display: flex;
+    align-items: baseline;
+}
