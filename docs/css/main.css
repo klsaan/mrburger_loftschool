@@ -505,7 +505,8 @@ img {
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 3.125rem; }
 
 .btn {
   border: none;
@@ -622,8 +623,7 @@ img {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  cursor: pointer;
-  margin-bottom: 3.125rem; }
+  cursor: pointer;}
 
 .advantages {
   text-align: center;
