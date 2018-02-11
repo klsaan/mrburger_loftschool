@@ -1,0 +1,27 @@
+.side-nav {
+
+    &__item {
+        position: relative;
+        top: 100px;
+        left: 100px;
+
+        &::before {            
+            position: absolute;
+            content: '';
+            bottom: 900px;
+            left: 600px;
+            @include circle (15px, rgb(22, 41, 105));
+            
+        }
+    }
+
+    &__item--active::after {
+        position: absolute;
+            content: '';
+            bottom: 892.75px;
+            left: 592.2px;
+            @include circle (30px, none);
+            box-shadow: 0 0 0 2px rgb(22, 41, 105);
+
+    }
+}

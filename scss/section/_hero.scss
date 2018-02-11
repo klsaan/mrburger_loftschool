@@ -10,7 +10,7 @@
 }
 
 .background {
-  background: url(../img/texture.png), url("../img/bg1.jpg") #000 100% 100%;
+  background: url(../img/texture.png), url("../img/bg1.jpg") #000 center;
   background-size: cover;
   display: -webkit-flex;
   display: -ms-flex;
@@ -56,6 +56,9 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    @include tablets() {
+      display: none;
+    }
   }
 
   &__list {
@@ -81,7 +84,7 @@
     &::after {
       content: "";
       position: absolute;
-      right: rem(-20px);
+      right: rem(-15px);
       top: rem(12px);
       @include circle(rem(4px), $white);
     }
@@ -96,7 +99,11 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: center;
+  justify-content: center;  
+  align-items: center;
+  @include tablets() {
+    flex-direction: column;
+  }
 
   &-container {
     max-width: rem(868px);
@@ -106,28 +113,42 @@
 
   &__text {
     margin-left: rem(10px);
+    width: 80vw;
+    margin-top: 11vh;
+    @include tablets() {
+      margin: 0;
+      margin-top: 4vh;
+      text-align: center;
+      width: 75vw;
+    }
   }
 
   &__head {
     line-height: rem(85px);
     color: $yellow;
-    margin: rem(122px) 0 0;
+    margin: 0;
+    width: 100%;
+
   }
 
   &__p {
     font-size: rem(65px);
     line-height: rem(60px);
-    margin-top: rem(25px);
+    margin-top: 3vh;
+    width: 100%;
+    height: auto;
   }
 
   &__img {
-    width: rem(451px);
-    height: rem(424px);
+    display: flex;
+    align-items: center;
   }
 
   &__picture {
     margin-top: rem(-12px);
     margin-left: rem(-18px);
+    width: 42vw;
+    max-width: 433px;
   }
 }
 

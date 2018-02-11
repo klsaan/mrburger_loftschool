@@ -1,6 +1,6 @@
 .advantages {
   text-align: center;
-  background: url("../img/adv.jpg") no-repeat 100% 100% #fff;
+  background: url("../img/advantages.jpg") no-repeat center #fff;
   margin: 0 auto;
   background-size: cover;
   display: flex;
@@ -28,15 +28,15 @@
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 6%;
+    margin-top: 8vw;
     margin-bottom: 4%;
   }
 
   &__item {
-    width: rem(287px);
+    max-width: rem(287px);
     text-align: center;
+    margin: 0 5px;
   }
 
   &__img-box {

@@ -11,6 +11,7 @@
 
 .container {
   margin: 0 auto;
+  padding: 0 5%;
 }
 
 
@@ -27,4 +28,37 @@ a {
 img {
   font-size: 0;
   line-height: 0;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  width: 42vw;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]) {
+  border: 0;
+  width: 100%;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+input[type="checkbox"] {
+  border: 0;
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+textarea {
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
 }
