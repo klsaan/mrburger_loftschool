@@ -45,8 +45,7 @@
     <button class="arrow-button"></button>
   </section>
 
-  
-    <section class="advantages section">
+  <section class="advantages section">
       <div class="container advantages-container">
         <h1 class="visually-hidden">Наши преимущества</h1>
         <h2 class="advantages__head head-text">Мы лучшие</h2>
@@ -90,7 +89,7 @@
           </div>
         </li>
         <li class="reviews__item">
-          <img src="img/photo3.png" alt="" class="reviews__img">
+          <img src="img/photo3.jpg" alt="" class="reviews__img">
           <div class="reviews__item--dark"></div>
           <div class="reviews__text">
             <h3 class="reviews__item-head head-text">Константин Спилберг</h3>
@@ -183,31 +182,13 @@
 
     <section class="team section">
       <h1 class="visually-hidden">Наша команда</h1>
-      <p class="team-head head-text">Команда</p>
-      <div class="team-acco">
-        <div class="team-acco__title">Дэниел Редклиф</div>
-        <div class="team-acco__content">
-          <div class="team-acco__picture"></div>
-          <div class="team-acco__text">
-            <div class="team-acco__text-title">Оператор</div>
-            <div class="team-acco__text-description">С радостью поможет подобрать идеальный бургер и оформить заказ</div>
-          </div>
-        </div>
-      </div>
-      <div class="team-acco">
-          <div class="team-acco__title">Дэниел Редклиф</div>
-          <div class="team-acco__content">
-            <div class="team-acco__picture"></div>
-            <div class="team-acco__text">
-              <div class="team-acco__text-title">Оператор</div>
-              <div class="team-acco__text-description">С радостью поможет подобрать идеальный бургер и оформить заказ</div>
-            </div>
-          </div>
-        </div>
-        <div class="team-acco">
-            <div class="team-acco__title">Дэниел Редклиф</div>
+      <div class="team__container">
+        <div class="team__content">
+          <p class="team__head head-text">Команда</p>
+          <div class="team-acco">
+            <a href="#" class="team-acco__title head-text">Дэниел Редклиф</a>
             <div class="team-acco__content">
-              <div class="team-acco__picture"></div>
+              <div class="team-acco__picture"><img src="img/face.jpg" alt="" class="team-acco__img"></div>
               <div class="team-acco__text">
                 <div class="team-acco__text-title">Оператор</div>
                 <div class="team-acco__text-description">С радостью поможет подобрать идеальный бургер и оформить заказ</div>
@@ -215,21 +196,122 @@
             </div>
           </div>
           <div class="team-acco">
-              <div class="team-acco__title">Дэниел Редклиф</div>
-              <div class="team-acco__content">
-                <div class="team-acco__picture"></div>
-                <div class="team-acco__text">
-                  <div class="team-acco__text-title">Оператор</div>
-                  <div class="team-acco__text-description">С радостью поможет подобрать идеальный бургер и оформить заказ</div>
-                </div>
+            <a href="#" class="team-acco__title team-acco__title--active head-text">Ричард Джеймс</a>
+            <div class="team-acco__content team-acco__content--active">
+              <div class="team-acco__picture"><img src="img/face.jpg" alt="" class="team-acco__img"></div>
+              <div class="team-acco__text">
+                <div class="team-acco__text-title">Оператор</div>
+                <div class="team-acco__text-description">С радостью поможет подобрать идеальный бургер и оформить заказ</div>
               </div>
             </div>
+          </div>
+          <div class="team-acco">
+            <a href="#" class="team-acco__title head-text">Джейк Финн</a>
+            <div class="team-acco__content">
+              <div class="team-acco__picture"><img src="img/face.jpg" alt="" class="team-acco__img"></div>
+              <div class="team-acco__text">
+                <div class="team-acco__text-title">Оператор</div>
+                <div class="team-acco__text-description">С радостью поможет подобрать идеальный бургер и оформить заказ</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-acco">
+            <a href="#" class="team-acco__title head-text">Николай Иванов</a>
+            <div class="team-acco__content">
+              <div class="team-acco__picture"><img src="img/face.jpg" alt="" class="team-acco__img"></div>
+              <div class="team-acco__text">
+                <div class="team-acco__text-title">Оператор</div>
+                <div class="team-acco__text-description">С радостью поможет подобрать идеальный бургер и оформить заказ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section order">
+      <h1 class="visually-hidden">Заказать доставку бургеров</h1>
+      <div class="container order-container">
+        <h2 class="order__head head-text">Закажите доставку</h2>
+        <form class="order__form" action="#" method="post">
+          <fieldset class="order__left order__fieldset" >
+
+            <div class="order__group order__height-field">
+                <label class="order__label">
+                    <p class="order__title">Имя</p>
+                    <input class="order__input" type="text">
+                  </label>
+            
+                  <label class="order__label">
+                    <p class="order__title">Телефон</p>
+                    <input class="order__input" type="tel">
+                  </label>
+            </div>          
+      
+            <label class="order__label order__label--full-stroke order__height-field">
+              <p class="order__title">Улица</p>
+              <input class="order__input" type="text">
+            </label>
+
+            <div class="order__group">
+                <label class="order__label order__label--number order__height-field">
+                    <p class="order__title">Дом</p>
+                    <input class="order__input" type="number">
+                  </label>
+            
+                  <label class="order__label order__label--number">
+                    <p class="order__title">Корпус</p>
+                    <input class="order__input" type="number">
+                  </label>
+            
+                  <label class="order__label order__label--number">
+                    <p class="order__title">Квартира</p>
+                    <input class="order__input" type="number">
+                  </label>
+            
+                  <label class="order__label order__label--number">
+                    <p class="order__title">Этаж</p>
+                    <input class="order__input" type="number">
+                  </label>
+            </div>
+          </fieldset>
+          <fieldset class="order__right order__fieldset">
+            <label class="order__label order__label--comment">
+              <p class="order__title">Комментарий</p>
+              <textarea name="comment" id="comment" class="order__comment"></textarea>            
+            </label>
+            <div class="order__group order__radio-group">
+                <label class="order__custom order__pay">
+                    <input type="radio" name="pay" value="cash" class="order__radio visually-hidden">
+                    <div class="order__radio-custom"></div>
+                    <span class="order__radio-text">Потребуется сдача</span> 
+                    
+                  </label>
+                  <label class="order__custom order__pay">
+                    <input type="radio" name="pay" value="card" class="order__radio visually-hidden" checked>
+                    <div class="order__radio-custom"></div>
+                    <span class="order__radio-text">Оплата картой</span>                  
+                  </label>
+            </div>
+            
+            <label class="order__custom order__not-call">
+              <input type="checkbox" name="not-call-back" class="order__checkbox visually-hidden" checked>
+              <div class="order__checkbox-custom"></div>
+              <span class="order__radio-text">Не перезванивать</span>
+            </label>
+            <div class="order__group order__buttons-group">
+                <button class="btn">Заказать</button>
+                <input type="reset" class="order__reset" value="Очистить">
+            </div>
+          </fieldset>     
+        </form>
+      </div>
+      
     </section>
      
     <section class="map section">
         <h1 class="visually-hidden">Местоположение MrBurger</h1>
-        <img src="img/map.png" alt="" class="map__picture">
+        <!-- <img src="img/map.png" alt="" class="map__picture"> -->
         <footer class="footer">
           <div class="contacts">
             <p class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
@@ -251,12 +333,14 @@
           </div>
         </footer>
     </section>
-</body>
-</html>
-  
 
-  </div>
-</div>
+    <ul class="side-nav">
+      <li class="side-nav__item side-nav__item--active"></li>
+      <li class="side-nav__item"></li>
+      <li class="side-nav__item"></li>
+      <li class="side-nav__item"></li>
+      <li class="side-nav__item"></li>
+      <li class="side-nav__item"></li>
+    </ul>
 </body>
-
 </html>
