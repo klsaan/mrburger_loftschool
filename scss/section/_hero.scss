@@ -32,6 +32,10 @@
   cursor: pointer;
   font-family: UbuntuMedium;
 
+  @include tablets() {
+    margin-right: 40px;
+  }
+
   &:active,
   &:hover {
     background-color: $orange-button_hover;
@@ -109,6 +113,10 @@
     max-width: rem(868px);
     margin-bottom: rem(75px);
     color: $white;
+
+    @include phones() {
+      margin-bottom: 0;;
+    }
   }
 
   &__text {
@@ -121,6 +129,10 @@
       text-align: center;
       width: 75vw;
     }
+
+    @include phones() {
+      width: 90vw;
+    }
   }
 
   &__head {
@@ -129,6 +141,10 @@
     margin: 0;
     width: 100%;
 
+    @include phones() {
+      font-size: rem(63px);
+      line-height: rem(63px);
+    }
   }
 
   &__p {
@@ -137,6 +153,11 @@
     margin-top: 3vh;
     width: 100%;
     height: auto;
+
+    @include phones () {
+      font-size: rem(54px);
+      line-height: rem(54px);
+    }
   }
 
   &__img {
@@ -149,6 +170,11 @@
     margin-left: rem(-18px);
     width: 42vw;
     max-width: 433px;
+    min-width: 305px;
+
+    @include phones() {
+      min-width: 285px;
+    }
   }
 }
 
