@@ -1,0 +1,49 @@
+.side-nav {
+
+    position: fixed;
+    top: 100px;
+    right: 50px;
+
+    @include tablets() {
+        display: none;
+    }
+
+
+    &__link {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        display: block;
+        margin-bottom: 15px;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &::before {
+            width: 8px;
+            height: 8px;
+            background-color: $white;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            opacity: 0;
+            border: 1px solid $white;
+        }
+
+        &--active {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}

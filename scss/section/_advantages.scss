@@ -1,0 +1,72 @@
+.advantages {
+  text-align: center;
+  background: url("../img/advantages.jpg") no-repeat center #fff;
+  margin: 0 auto;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  &-container {
+    width: rem(920px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__head {
+    line-height: rem(72px);
+    display: inline-block;
+    margin: 0 auto;
+
+    @include phones() {
+      font-size: rem(63px);
+    }
+  }
+
+  &__h {
+    font-size: rem(24px);
+    line-height: rem(28px);
+    margin-bottom: rem(10px);
+  }
+
+  &__list {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vw;
+    margin-bottom: 4%;
+
+    @include phones() {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    max-width: rem(287px);
+    text-align: center;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+
+    @include phones() {
+      flex-direction: row;
+      max-width: 90vw;
+    }
+  }
+
+  &__img-box {
+    height: rem(89px);
+
+    @include phones() {
+      margin-top: 20px;
+      min-width: 100px;
+    }
+  }
+
+  &__text {
+    @include phones() {
+      margin-left: 15px;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.team {
+    background: url(../img/team_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+
+
+&__container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: $dark_transparent;
+    display: flex;
+    align-items: center;
+    @include tablets() {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+&__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vw;
+    @include tablets() {
+        margin: 0;
+        padding: 0 20px;
+    }
+}
+
+&__head {
+    color: $yellow;
+    margin: 0;
+    margin-bottom: rem(10px);
+    text-align: center;
+    @include tablets() {
+        margin: 0;
+    }
+
+    @include phones() {
+        font-size: rem(63px);
+    }
+}
+
+&-acco {
+
+    margin-top: 30px;
+
+    @include tablets() {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    &__title {
+        font-size: rem(16px);
+        position: relative;
+        cursor: pointer;
+        @include tablets() {
+            display: inline-block;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: rem(-20px);
+            width: 0;
+            height: 0;
+            border: rem(10px) solid transparent;
+            border-width: rem(6px) rem(4px) 0 rem(4px);
+            border-top-color: $yellow;
+        }
+
+        &--active {
+            color: $yellow;
+        }
+        
+        &--active::before {
+            display: none;            
+        }
+
+        &--active::after {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: -20px;
+            width: 0;
+            height: 0;
+            border: rem(10px) solid transparent;
+            border-width: 0 rem(4px) rem(6px) rem(4px);
+            border-bottom-color: $yellow;
+        }
+    }
+
+    &__content {
+        margin-top: rem(20px);
+        display: none;
+
+
+        &--active {
+            display: block;
+            @include tablets() {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    &__picture{
+        width: rem(110px);
+        height: rem(110px);
+        overflow: hidden;
+        border-radius: 50%;
+        float: left;
+        margin-right: rem(20px);
+        @include tablets() {
+            float: none;
+            margin: 0;
+        }
+    }
+
+    &__img {
+        transform: translateX(-15%);
+        width: auto;
+        height: 100%;
+    }
+
+    &__text {
+        max-width: rem(380px);
+    }
+
+    &__text-title {
+        font-family: 'UbuntuB';
+        line-height: rem(17px);
+        @include tablets() {
+            margin-top: 15px;
+        }
+    }
+
+    &__text-description {
+        margin-top: rem(12px);
+    }
+
+}
+
+}

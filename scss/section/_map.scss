@@ -1,0 +1,11 @@
+.map{
+    position: relative;
+    background: url(../img/map.png) no-repeat center;
+    background-size: cover;
+    
+    &__picture {
+        width: 100%;
+        height: auto;
+    }
+
+}
